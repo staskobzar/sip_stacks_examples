@@ -1,0 +1,7 @@
+libexosip/sipua
+libre/reua
+pjsip/pjsipua
+sofia-sip/sofua
+*.d
+*.o
+
