@@ -1,5 +1,6 @@
 libexosip/sipua
 libre/reua
+libre/options
 pjsip/pjsipua
 sofia-sip/sofua
 *.d

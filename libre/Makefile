@@ -19,7 +19,7 @@ include $(LIBRE_MK)
 
 CFLAGS	+= -I$(LIBRE_INC)
 
-all: reua
+all: reua options
 
 reua: reua.o
 	$(LD) $(LFLAGS) $< -L$(LIBRE_SO) -lre $(LIBS) -o $@
@@ -27,6 +27,14 @@ reua: reua.o
 reua.o: reua.c
 	$(CC) $(CFLAGS) -c $< -o $@ $(DFLAGS)
 
+options: options.o
+	$(LD) $(LFLAGS) $< -L$(LIBRE_SO) -lre $(LIBS) -o $@
+
+options.o: options.c
+	$(CC) $(CFLAGS) -c $< -o $@ $(DFLAGS)
+
 .PHONY: clean
 clean:
-	rm -f reua reua.o reua.d
+	rm -f reua options *.o *.d
+
+
