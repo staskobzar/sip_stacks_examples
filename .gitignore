@@ -3,6 +3,7 @@ libre/reua
 libre/options
 pjsip/pjsipua
 sofia-sip/sofua
+sofia-sip/options
 *.d
 *.o
 
