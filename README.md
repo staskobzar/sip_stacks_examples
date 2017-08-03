@@ -10,4 +10,4 @@ Playing with four OpenSource SIP libraries:
 
 Simple UA for each library just to register to proxy.
 
-Sofia-sip and libre also provide examples of OPTIONS packet send.
+Also provides examples of OPTIONS packet send for sofia-sip, pjsip and libre.
